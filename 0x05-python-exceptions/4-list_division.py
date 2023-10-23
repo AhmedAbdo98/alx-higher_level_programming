@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-def list_division(my _list_1, my_list_2, list_lenght):
+def list_division(my _list_1, my_list_2, list_length):
     new_list = []
-    for i in range(list_lenght):
+    for i in range(list_length):
     try:
         new_list.append(my _list_1[i] / my_list_2[i])
     except ZeroDivisionError:
@@ -14,7 +14,7 @@ def list_division(my _list_1, my_list_2, list_lenght):
         continue
     except TypeError:
         new_list.append(0)
-        new_list.append('wrong type')
+        print('wrong type')
         continue
     finally:
     pass
